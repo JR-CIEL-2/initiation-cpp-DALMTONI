@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/main.cpp.o -c /workspaces/initiation-cpp-DALMTONI/main.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/main.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Arme.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Arme.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Arme.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Personnage.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Personnage.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Personnage.cpp"
+}
+]

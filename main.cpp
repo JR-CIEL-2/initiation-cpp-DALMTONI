@@ -1,37 +1,46 @@
 #include <iostream>
 #include <string>
-#include "Personnage.hpp" 
-
-using namespace std;
-
-#include <iostream>
-#include "Personnage.hpp" //Ne pas oublier
+#include "Personnage.hpp"
 
 using namespace std;
 
 int main()
 {
-    Personnage david, goliath;
-    //Création de 2 objets de type Personnage : david et goliath
+    // Création des personnages
+    Personnage david, goliath("Epée aiguisée", 20), superman("Sabre Laser", 30);
 
-    goliath.attaquer(david); //goliath attaque david
-    david.boirePotionDeVie(20); //david récupère 20 de vie en buvant une potion
-    goliath.attaquer(david); //goliath attaque david
-    david.attaquer(goliath); //david contre-attaque... c'est assez clair non ? 
-    goliath.changerArme("Double hache tranchante veneneuse de la mort", 40);
+    // Au combat !
+    /*
     goliath.attaquer(david);
+    david.boirePotionDeVie(20);
+    goliath.attaquer(david);
+    david.attaquer(goliath);
+    goliath.changerArme("Double hache tranchante vénéneuse de la mort", 40);
+    goliath.attaquer(david);
+    */
+
+    superman.attaquer(goliath);
+    superman.attaquer(david);
+
+    david.attaquer(superman);
+    david.changerArme("Sabre Laser", 30);
+    david.attaquer(goliath);
+
+    goliath.attaquer(superman);
+    goliath.boirePotionDeVie(20);
+
+    superman.boirePotionDeVie(10);
+    superman.changerArme("Epée aiguisée", 20);
+    superman.attaquer(david);
+
+
+    // Temps mort ! Voyons voir la vie de chacun...
+    cout << "David" << endl;
+    david.afficherEtat();
+    cout << endl << "Goliath" << endl;
+    goliath.afficherEtat();
+    cout << endl << "superman" << endl;
+    superman.afficherEtat();
 
     return 0;
 }
-
-/*
-int main() {
-    cout << "Hello World\n";
-    cout << "Input: ";
-    int data;
-    cin >> data;
-    data = data + 2;
-    cout << "Output: " << data << "\n\n";
-    return 0;
-}
-*/
