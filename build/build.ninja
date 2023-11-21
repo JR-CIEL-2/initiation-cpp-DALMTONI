@@ -186,14 +186,8 @@ build CMakeFiles/poo.dir/main.cpp.o: CXX_COMPILER__poo_Debug ../main.cpp || cmak
   OBJECT_DIR = CMakeFiles/poo.dir
   OBJECT_FILE_DIR = CMakeFiles/poo.dir
 
-build CMakeFiles/poo.dir/Arme.cpp.o: CXX_COMPILER__poo_Debug ../Arme.cpp || cmake_object_order_depends_target_poo
-  DEP_FILE = CMakeFiles/poo.dir/Arme.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/poo.dir
-  OBJECT_FILE_DIR = CMakeFiles/poo.dir
-
-build CMakeFiles/poo.dir/Personnage.cpp.o: CXX_COMPILER__poo_Debug ../Personnage.cpp || cmake_object_order_depends_target_poo
-  DEP_FILE = CMakeFiles/poo.dir/Personnage.cpp.o.d
+build CMakeFiles/poo.dir/Classe.cpp.o: CXX_COMPILER__poo_Debug ../Classe.cpp || cmake_object_order_depends_target_poo
+  DEP_FILE = CMakeFiles/poo.dir/Classe.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/poo.dir
   OBJECT_FILE_DIR = CMakeFiles/poo.dir
@@ -206,7 +200,7 @@ build CMakeFiles/poo.dir/Personnage.cpp.o: CXX_COMPILER__poo_Debug ../Personnage
 #############################################
 # Link the executable poo
 
-build poo: CXX_EXECUTABLE_LINKER__poo_Debug CMakeFiles/poo.dir/main.cpp.o CMakeFiles/poo.dir/Arme.cpp.o CMakeFiles/poo.dir/Personnage.cpp.o
+build poo: CXX_EXECUTABLE_LINKER__poo_Debug CMakeFiles/poo.dir/main.cpp.o CMakeFiles/poo.dir/Classe.cpp.o
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   OBJECT_DIR = CMakeFiles/poo.dir
