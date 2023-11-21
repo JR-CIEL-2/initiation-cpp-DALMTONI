@@ -9,15 +9,15 @@ class Voiture
 {
     public:
 
-    std::string couleur;
+    std::string m_couleur;
 
     Voiture();
-    Voiture(std::string marque, std::string couleur, int km_h);
+    Voiture(std::string m_marque, std::string m_couleur, int m_km_h);
     ~Voiture();
 
-    std::string setMarque(std::string marque);
-    std::string setCouleur(std::string couleur);
-    int setVitesse(int km_h);
+    std::string setMarque(std::string m_marque);
+    std::string setCouleur(std::string m_couleur);
+    int setVitesse(int m_km_h);
     
     std::string getMarque();
     std::string getCouleur();
@@ -25,9 +25,11 @@ class Voiture
     
     private:
 
-    std::string marque;
-    int km_h;
+    std::string m_marque;
+    int m_km_h;
     
 };
 
 #endif
+
+//////
