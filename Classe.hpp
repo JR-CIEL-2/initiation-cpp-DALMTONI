@@ -15,9 +15,9 @@ class Voiture
     Voiture(std::string m_marque, std::string m_couleur, int m_km_h);
     ~Voiture();
 
-    std::string setMarque(std::string m_marque);
-    std::string setCouleur(std::string m_couleur);
-    int setVitesse(int m_km_h);
+    void setMarque(std::string m_marque);
+    void setCouleur(std::string m_couleur);
+    void setVitesse(int m_km_h);
     
     std::string getMarque();
     std::string getCouleur();
