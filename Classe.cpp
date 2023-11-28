@@ -20,6 +20,7 @@ Voiture::~Voiture()
     cout << "l objet est detruit" <<endl;
 }
 
+/*
 void Voiture::setMarque(string marque) 
 {
     m_marque = marque;
@@ -34,6 +35,7 @@ void Voiture::setVitesse(int km_h)
 {
     m_km_h = km_h;
 }
+*/
 
 string Voiture::getMarque()
 {
