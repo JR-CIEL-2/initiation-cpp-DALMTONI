@@ -1,5 +1,5 @@
-#ifndef DEF_VOITURE
-#define DEF_VOITURE
+#ifndef DEF_VEHICULE
+#define DEF_VEHICULE
 
 #include <iostream>
 #include <string>
@@ -9,8 +9,6 @@ using namespace std;
 class Voiture
 {
     public:
-
-    string m_couleur;
 
     Voiture();
     Voiture(string m_marque, string m_couleur, int m_km_h);
@@ -29,7 +27,8 @@ class Voiture
     private:
 
     string m_marque;
-    int m_km_h;
+    int m_vitesse;
+    string m_couleur;
     
 };
 

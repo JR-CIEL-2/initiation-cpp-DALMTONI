@@ -1,55 +1,55 @@
-#include "Classe.hpp"
+#include "Vehicule.hpp"
 
 using namespace std;
 
-Voiture::Voiture() : m_km_h(0)
+Vehicule::Vehicule() : m_vitesse(0)
 {
     cout << "un objet est cree" <<endl;
 }
 
-Voiture::Voiture(string marque, string couleur, int km_h)
+Vehicule::Vehicule(string marque, string couleur, int vitesse)
 {
     m_marque=marque;
     m_couleur=couleur;
-    m_km_h=km_h;
+    m_vitesse=vitesse;
     
 }
 
-Voiture::~Voiture()
+Vehicule::~Vehicule()
 {
     cout << "l objet est detruit" <<endl;
 }
 
 /*
-void Voiture::setMarque(string marque) 
+void Vehicule::setMarque(string marque) 
 {
     m_marque = marque;
 }
 
-void Voiture::setCouleur(string couleur)
+void Vehicule::setCouleur(string couleur)
 {
     m_couleur = couleur;
 }
 
-void Voiture::setVitesse(int km_h)
+void Vehicule::setVitesse(int vitesse)
 {
-    m_km_h = km_h;
+    m_vitesse = vitesse;
 }
 */
 
-string Voiture::getMarque()
+string Vehicule::getMarque()
 {
     return m_marque;
 }
 
-string Voiture::getCouleur()
+string Vehicule::getCouleur()
 {
     return m_couleur;
 }
 
-int Voiture::getVitesse()
+int Vehicule::getVitesse()
 {
-    return m_km_h;
+    return m_vitesse;
 }
 
 /////
