@@ -5,33 +5,75 @@
 #include <string>
 
 using namespace std;
-
-class Voiture
+class Vehicule
 {
-    public:
+private:
 
-    Voiture();
-    Voiture(string m_marque, string m_couleur, int m_km_h);
-    ~Voiture();
+    string marque;
+    int vitesse;
+    string couleur;
 
-    /*
-    void setMarque(string m_marque);
-    void setCouleur(string m_couleur);
-    void setVitesse(int m_km_h);
-    */
+public:
+
+    Vehicule(); // par défaut
+    Vehicule(string marq, int vit, string coul); // avec des paramètres
+    ~Vehicule();
+
+    void seDeplacer();
+    void setVitesse(int vit);
+    void setMarque(string marq);
+    void setCouleur(string coul);
 
     string getMarque();
     string getCouleur();
     int getVitesse();
-    
-    private:
+};
 
-    string m_marque;
-    int m_vitesse;
-    string m_couleur;
-    
+class Voiture : public Vehicule
+{
+private:
+
+    int clim;
+
+public:
+
+    Voiture();
+    Voiture(string marq, int vit, string coul, int cli); // Ajout du constructeur
+    ~Voiture();
+
+    void setClim(int cli);
+    int getClim();
+};
+
+class Camion : public Vehicule
+{
+
+private:
+    int poidsCharge;
+
+public:
+    Camion();
+    Camion(string marq, int vit, string coul, int poids); // Ajout du constructeur
+    ~Camion();
+
+    void setPoidsCharge(int poids);
+    int getPoidsCharge();
+};
+
+class Scooter : public Vehicule
+{
+private:
+
+    int cylindre;
+
+public:
+
+    Scooter();
+    Scooter(string marq, int vit, string coul, int cyl); // Ajout du constructeur
+    ~Scooter();
+
+    void setCylindre(int cyl);
+    int getCylindre();
 };
 
 #endif
-
-//////

@@ -6,7 +6,7 @@
 },
 {
   "directory": "/workspaces/initiation-cpp-DALMTONI/build",
-  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Classe.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Classe.cpp",
-  "file": "/workspaces/initiation-cpp-DALMTONI/Classe.cpp"
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Vehicule.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Vehicule.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Vehicule.cpp"
 }
 ]

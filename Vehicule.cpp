@@ -2,54 +2,114 @@
 
 using namespace std;
 
-Vehicule::Vehicule() : m_vitesse(0)
-{
-    cout << "un objet est cree" <<endl;
+Vehicule::Vehicule() {
+    // Initialisation par défaut
+    marque = "";
+    vitesse = 0;
+    couleur = "";
 }
 
-Vehicule::Vehicule(string marque, string couleur, int vitesse)
-{
-    m_marque=marque;
-    m_couleur=couleur;
-    m_vitesse=vitesse;
-    
+Vehicule::Vehicule(string marq, int vit, string coul) {
+    // Initialisation avec des paramètres
+    marque = marq;
+    vitesse = vit;
+    couleur = coul;
 }
 
-Vehicule::~Vehicule()
-{
-    cout << "l objet est detruit" <<endl;
+Vehicule::~Vehicule() {
+    // Destructeur
 }
 
-/*
-void Vehicule::setMarque(string marque) 
-{
-    m_marque = marque;
+void Vehicule::seDeplacer() {
+    cout << "Le véhicule se déplace." << endl;
 }
 
-void Vehicule::setCouleur(string couleur)
-{
-    m_couleur = couleur;
+void Vehicule::setVitesse(int vit) {
+    vitesse = vit;
 }
 
-void Vehicule::setVitesse(int vitesse)
-{
-    m_vitesse = vitesse;
-}
-*/
-
-string Vehicule::getMarque()
-{
-    return m_marque;
+void Vehicule::setMarque(string marq) {
+    marque = marq;
 }
 
-string Vehicule::getCouleur()
-{
-    return m_couleur;
+void Vehicule::setCouleur(string coul) {
+    couleur = coul;
 }
 
-int Vehicule::getVitesse()
-{
-    return m_vitesse;
+string Vehicule::getMarque() {
+    return marque;
 }
 
-/////
+string Vehicule::getCouleur() {
+    return couleur;
+}
+
+int Vehicule::getVitesse() {
+    return vitesse;
+}
+
+// Implémentation des membres de la classe Voiture
+
+Voiture::Voiture() {
+    clim = 0;
+}
+
+Voiture::Voiture(string marq, int vit, string coul, int cli) : Vehicule(marq, vit, coul) {
+    clim = cli;
+}
+
+Voiture::~Voiture() {
+    // Destructeur
+}
+
+void Voiture::setClim(int cli) {
+    clim = cli;
+}
+
+int Voiture::getClim() {
+    return clim;
+}
+
+// Implémentation des membres de la classe Camion
+
+Camion::Camion() {
+    poidsCharge = 0;
+}
+
+Camion::Camion(string marq, int vit, string coul, int poids) : Vehicule(marq, vit, coul) {
+    poidsCharge = poids;
+}
+
+Camion::~Camion() {
+    // Destructeur
+}
+
+void Camion::setPoidsCharge(int poids) {
+    poidsCharge = poids;
+}
+
+int Camion::getPoidsCharge() {
+    return poidsCharge;
+}
+
+// Implémentation des membres de la classe Scooter
+
+Scooter::Scooter() {
+    cylindre = 0;
+}
+
+Scooter::Scooter(string marq, int vit, string coul, int cyl) : Vehicule(marq, vit, coul) {
+    cylindre = cyl;
+}
+
+Scooter::~Scooter() {
+    // Destructeur
+}
+
+void Scooter::setCylindre(int cyl) {
+    cylindre = cyl;
+}
+
+int Scooter::getCylindre() {
+    return cylindre;
+}
