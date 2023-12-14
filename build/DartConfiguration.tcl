@@ -14,7 +14,7 @@ CostDataFile:
 Site: codespaces-e8804e
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-clang++
+BuildName: Linux-g++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /usr/bin/clang++
-CompilerVersion: 11.0.1
+Compiler: /usr/bin/g++
+CompilerVersion: 10.2.1
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

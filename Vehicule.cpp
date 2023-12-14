@@ -48,27 +48,7 @@ int Vehicule::getVitesse() {
     return vitesse;
 }
 
-// Implémentation des membres de la classe Voiture
 
-Voiture::Voiture() {
-    clim = 0;
-}
-
-Voiture::Voiture(string marq, int vit, string coul, int cli) : Vehicule(marq, vit, coul) {
-    clim = cli;
-}
-
-Voiture::~Voiture() {
-    // Destructeur
-}
-
-void Voiture::setClim(int cli) {
-    clim = cli;
-}
-
-int Voiture::getClim() {
-    return clim;
-}
 
 // Implémentation des membres de la classe Camion
 
