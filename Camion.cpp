@@ -29,5 +29,5 @@ void Camion::setPoidsCharge(int poids)
 
 int Camion::getPoidsCharge() const
 {
-    return m_poidsCharge;
+    cout << "le poids de charge est de " << m_poidsCharge<< endl;
 }

@@ -6,14 +6,16 @@ using namespace std;
 
 Voiture::Voiture() : Vehicule()
 {
-
 }
 
 Voiture::Voiture(string marq, int vit, string coul, int clim) : Vehicule(marq, vit, coul) {
-    clim = 0;
-    m_marq= marq;
-    m_vit= vit;
-    m_copul=coul;
+    
+    m_aLaClim = clim;
+}
+
+Voiture::Voiture(const Voiture &autre) : Vehicule(autre)
+{
+    m_aLaClim = autre.m_aLaClim;
 }
 
 Voiture::~Voiture() 
@@ -21,10 +23,12 @@ Voiture::~Voiture()
     cout << "un objet a ete detrui" << endl;
 }
 
-void Voiture::setClim(int cli) {
-    clim = cli;
+void Voiture::setClim(int cli) 
+{
+    m_aLaClim = cli;
 }
 
-int Voiture::getClim() {
-    return clim;
+int Voiture::getClim() const
+{
+    cout << "la clim est de " << m_aLaClim << endl;
 }
