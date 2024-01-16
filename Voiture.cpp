@@ -4,15 +4,22 @@
 
 using namespace std;
 
-// Implémentation des membres de la classe Voiture
+Voiture::Voiture() : Vehicule()
+{
 
-    Voiture::Voiture(string marq, int vit, string coul, int clim) : Vehicule(marq, vit, coul) {
+}
+
+Voiture::Voiture(string marq, int vit, string coul, int clim) : Vehicule(marq, vit, coul) {
     clim = 0;
     m_marq= marq;
     m_vit= vit;
     m_copul=coul;
 }
 
+Voiture::~Voiture() 
+{
+    cout << "un objet a ete detrui" << endl;
+}
 
 void Voiture::setClim(int cli) {
     clim = cli;

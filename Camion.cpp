@@ -4,24 +4,30 @@
 
 using namespace std;
 
-// Implémentation des membres de la classe Camion
-
+Camion::Camion() : Vehicule()
+{
+}
 
 Camion::Camion(string marq, int vit, string coul, int poids) : Vehicule(marq, vit, coul) {
-    poidsCharge = 0;
-    marque= marq;
-    vitesse= vit;
-    couleur=coul;
+    m_poidsCharge = poids;
 }
 
-Camion::~Camion() {
-    
+Camion::Camion(const Camion &autre) : Vehicule(autre)
+{
+    m_poidsCharge = autre.m_poidsCharge;
 }
 
-void Camion::setPoidsCharge(int poids) {
-    poidsCharge = poids;
+Camion::~Camion() 
+{
+    cout << "un objet a ete detrui" << endl;
 }
 
-int Camion::getPoidsCharge() {
-    return poidsCharge;
+void Camion::setPoidsCharge(int poids) 
+{
+    m_poidsCharge = poids;
+}
+
+int Camion::getPoidsCharge() const
+{
+    return m_poidsCharge;
 }

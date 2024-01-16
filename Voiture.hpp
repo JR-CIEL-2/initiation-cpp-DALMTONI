@@ -10,13 +10,14 @@ using namespace std;
 class Voiture : public Vehicule
 {
 private:
-    bool clim;
+    bool m_aLaClim;
 
 public:
-    Voiture(string marq, int vit, string coul, int clim); // Ajout du constructeur
+    Voiture();
+    Voiture(string marq, int vit, string coul, int clim); 
     ~Voiture();
-    void setClim(int cli);
-    int getClim();
+    void setALaClim(int cli);
+    int getALaClim();
 };
 
 #endif
