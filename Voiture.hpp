@@ -5,7 +5,6 @@
 #include <string>
 #include "Vehicule.hpp"
 
-using namespace std;
 
 class Voiture : public Vehicule
 {
@@ -14,10 +13,11 @@ private:
 
 public:
     Voiture();
-    Voiture(string marq, int vit, string coul, int clim); 
+    Voiture(std::string marq, int vit, std::string coul, bool clim); 
+    Voiture(const Voiture& autre);
     ~Voiture();
-    void setALaClim(int cli);
-    int getALaClim();
+    void setALaClim(bool cli);
+    int getALaClim() const;
 };
 
 #endif
