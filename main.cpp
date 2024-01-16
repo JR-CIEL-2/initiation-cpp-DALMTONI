@@ -1,36 +1,28 @@
 #include <iostream>
 #include <string>
 #include "Vehicule.hpp"
+#include "Scooter.hpp"
+#include "Camion.hpp"
 
 using namespace std;
 
 int main()
 {
-    //   Création des Voitures
-    
-    Voiture maVoiture("Audi", 120, "Gris", 1);
-    std::cout << "Marque de la voiture : " << maVoiture.getMarque() << std::endl;
-    std::cout << "Vitesse de la voiture : " << maVoiture.getVitesse() << std::endl;
-    std::cout << "Couleur de la voiture : " << maVoiture.getCouleur() << std::endl;
-    std::cout << "     "<< std::endl;
+    // scooter
 
-    //   Création des Camions
+    Scooter gamos2("noire", "vespa", 120, 20, 250);
+    Scooter gamos3(gamos2);
+    gamos2.getCylindree();
+    gamos2.getCouleur();
+    gamos2.getMarque();
+    gamos3.getCouleur();
+    cout <<" "<<endl;
     
-    Camion monCamion("Mercedes", 80, "Noir", 0);
-    monCamion.setPoidsCharge(5000);
-    std::cout << "Marque du camion : " << monCamion.getMarque() << std::endl;
-    std::cout << "Vitesse du camion : " << monCamion.getVitesse() << std::endl;
-    std::cout << "Couleur du camion : " << monCamion.getCouleur() << std::endl;
-    std::cout << "     "<< std::endl;
-    
-    //   Création des Scooter
-    
-    Scooter monScooter("Yamaha", 60, "Bleu", 0);
-    monScooter.setCylindre(125);
-    std::cout << "Marque du scooter : " << monScooter.getMarque() << std::endl;
-    std::cout << "Vitesse du scooter : " << monScooter.getVitesse() << std::endl;
-    std::cout << "Couleur du scooter : " << monScooter.getCouleur() << std::endl;
-    std::cout << "     "<< std::endl;
+    // voiture
+    Voiture caisse("jaune", "skodia", 100, 50, 300);
+    caisse.getALaClim();
+    caisse.getCouleur();
+    caisse.getMarque();
 
     return 0;
 }
