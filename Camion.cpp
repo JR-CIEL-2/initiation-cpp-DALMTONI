@@ -8,7 +8,8 @@ Camion::Camion() : Vehicule()
 {
 }
 
-Camion::Camion(string marq, int vit, string coul, int poids) : Vehicule(marq, vit, coul) {
+Camion::Camion(string marq, int vit, string coul, int pos, int poids) : Vehicule(coul, marq, vit, pos) 
+{
     m_poidsCharge = poids;
 }
 
@@ -27,7 +28,7 @@ void Camion::setPoidsCharge(int poids)
     m_poidsCharge = poids;
 }
 
-int Camion::getPoidsCharge() const
+void Camion::getPoidsCharge() const
 {
     cout << "le poids de charge est de " << m_poidsCharge<< endl;
 }

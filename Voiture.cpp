@@ -8,7 +8,7 @@ Voiture::Voiture() : Vehicule()
 {
 }
 
-Voiture::Voiture(string marq, int vit, string coul, int clim) : Vehicule(marq, vit, coul) {
+Voiture::Voiture(string marq, int vit, string coul, int pos, bool clim) : Vehicule(coul, marq, vit, pos) {
     
     m_aLaClim = clim;
 }
@@ -20,15 +20,15 @@ Voiture::Voiture(const Voiture &autre) : Vehicule(autre)
 
 Voiture::~Voiture() 
 {
-    cout << "un objet a ete detrui" << endl;
+    cout << "un objet a ete detruit" << endl;
 }
 
-void Voiture::setClim(int cli) 
+void Voiture::setALaClim(bool clim) 
 {
-    m_aLaClim = cli;
+    m_aLaClim = clim;
 }
 
-int Voiture::getClim() const
+void Voiture::getALaClim() const
 {
     cout << "la clim est de " << m_aLaClim << endl;
 }

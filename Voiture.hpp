@@ -13,11 +13,11 @@ private:
 
 public:
     Voiture();
-    Voiture(std::string marq, int vit, std::string coul, bool clim); 
+    Voiture(std::string marq, int vit, std::string coul, int pos, bool clim); 
     Voiture(const Voiture& autre);
     ~Voiture();
-    void setALaClim(bool cli);
-    int getALaClim() const;
+    void setALaClim(bool clim);
+    void getALaClim() const;
 };
 
 #endif

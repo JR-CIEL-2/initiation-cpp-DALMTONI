@@ -12,11 +12,11 @@ private:
 
 public:
     Camion();
-    Camion(std::string marq, int vit, std::string coul, int poids); // Ajout du constructeur
+    Camion(std::string marq, int vit, std::string coul, int pos, int poids); // Ajout du constructeur
     ~Camion();
     Camion(const Camion& autre);
     void setPoidsCharge(int poids);
-    int getPoidsCharge();
+    void getPoidsCharge()const;
 };
 
 #endif

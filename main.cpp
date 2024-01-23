@@ -1,29 +1,19 @@
 #include <iostream>
-#include <string>
 #include "Vehicule.hpp"
 #include "Scooter.hpp"
-#include "Camion.hpp"
-#include "Voiture.hpp"
 
-using namespace std;
+using namespace std ;
 
 int main()
 {
-    // scooter
-
-    Scooter gamos2("noire", "vespa", 120, 20 , 250 );
-    Scooter gamos3(gamos2);
-    gamos2.getCylindre();
+   
+    Scooter gamos2("vespa",120, "noir",  20, 250);
+    //Scooter gamos3(gamos2);
+    /*gamos2.getCylindree();
     gamos2.getCouleur();
-    gamos2.getMarque();
-    gamos3.getCouleur();
-    cout <<" "<<endl;
-    
-    // voiture
-    Voiture caisse("jaune", "skodia", 100, 50, 300);
-    caisse.getALaClim();
-    caisse.getCouleur();
-    caisse.getMarque();
+    gamos3.getMarque();*/
 
+    gamos2.afficher();
     return 0;
 }
+

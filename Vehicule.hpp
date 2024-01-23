@@ -1,32 +1,31 @@
 #ifndef DEF_VEHICULE
 #define DEF_VEHICULE
 
-#include <iostream>
 #include <string>
 
-class Vehicule
-{
-private:
-
+class Vehicule {
+    private :
     std::string m_marque;
     int m_vitesse;
     std::string m_couleur;
     int m_pos;
 
-public:
-
-    Vehicule(); // par défaut
-    Vehicule(std::string m_marq, int m_vit, std::string m_coul, int m_pos); // avec des paramètres
+    public:
+    Vehicule();
+    Vehicule(std::string coul, std::string marq, int vit, int pos);
+    Vehicule(const Vehicule &autre);
     ~Vehicule();
 
-    void seDeplacer();
     void setVitesse(int vit);
-    void setMarque(std::string marq);
     void setCouleur(std::string coul);
+    void setMarque(std::string marq);
+    void getVitesse();
+    void getCouleur();
+    void getMarque();
+    void seDeplacer(int pos);
 
-    std::string getMarque();
-    std::string getCouleur();
-    int getVitesse();
+    virtual void afficher() const = 0 ;
+
 };
 
 #endif
