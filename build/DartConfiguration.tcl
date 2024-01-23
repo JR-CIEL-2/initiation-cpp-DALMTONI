@@ -11,10 +11,10 @@ BuildDirectory: /workspaces/initiation-cpp-DALMTONI/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: codespaces-e8804e
+Site: codespaces-57da98
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-g++
+BuildName: Linux-clang++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /usr/bin/g++
-CompilerVersion: 10.2.1
+Compiler: /usr/bin/clang++
+CompilerVersion: 11.0.1
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

@@ -8,20 +8,23 @@ using namespace std;
 
 
 Scooter::Scooter(string marq, int vit, string coul, int cyl) : Vehicule(marq, vit, coul) {
-    cylindre = 0;
-    marque= marq;
-    vitesse= vit;
-    couleur=coul;
+    m_cylindre = cyl;
+    
 }
 
 Scooter::~Scooter() {
-    // Destructeur
+    cout << "un objet a ete detrui" << endl;
+}
+
+Scooter::Scooter(const Scooter &autre) : Scooter(autre)
+{
+    m_cylindre = autre.m_cylindre;
 }
 
 void Scooter::setCylindre(int cyl) {
-    cylindre = cyl;
+    m_cylindre = cyl;
 }
 
 int Scooter::getCylindre() {
-    return cylindre;
+    cout << "la clim est de " << m_cylindre << endl;
 }

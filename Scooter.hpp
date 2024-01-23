@@ -5,19 +5,19 @@
 #include <string>
 #include "Vehicule.hpp"
 
-using namespace std;
-
 class Scooter : public Vehicule
 {
 private:
 
-    int cylindre;
+    int m_cylindre;
 
 public:
-    Scooter(string marq, int vit, string coul, int cyl); // Ajout du constructeur
+    Scooter();
+    Scooter(std::string marq, int vit, std::string coul, int cyl); // Ajout du constructeur
     ~Scooter();
+    Scooter(const Scooter& autre);
     void setCylindre(int cyl);
-    int getCylindre();
+    int getCylindre() const;
 };
 
 #endif

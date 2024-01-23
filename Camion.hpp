@@ -5,16 +5,16 @@
 #include <string>
 #include "Vehicule.hpp"
 
-using namespace std;
-
 class Camion : public Vehicule
 {
 private:
-    int poidsCharge;
+    int m_poidsCharge;
 
 public:
-    Camion(string marq, int vit, string coul, int poids); // Ajout du constructeur
+    Camion();
+    Camion(std::string marq, int vit, std::string coul, int poids); // Ajout du constructeur
     ~Camion();
+    Camion(const Camion& autre);
     void setPoidsCharge(int poids);
     int getPoidsCharge();
 };
