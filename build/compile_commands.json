@@ -8,5 +8,20 @@
   "directory": "/workspaces/initiation-cpp-DALMTONI/build",
   "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Vehicule.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Vehicule.cpp",
   "file": "/workspaces/initiation-cpp-DALMTONI/Vehicule.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Scooter.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Scooter.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Scooter.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Voiture.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Voiture.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Voiture.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Camion.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Camion.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Camion.cpp"
 }
 ]
