@@ -20,7 +20,7 @@ Camion::Camion(const Camion &autre) : Vehicule(autre)
 
 Camion::~Camion() 
 {
-    cout << "un objet a ete detrui" << endl;
+    //cout << "un objet a ete detrui" << endl;
 }
 
 void Camion::setPoidsCharge(int poids) 

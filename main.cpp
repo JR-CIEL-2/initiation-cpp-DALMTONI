@@ -6,12 +6,12 @@ using namespace std ;
 
 int main()
 {
-   
     Scooter gamos2("vespa",120, "noir",  20, 250);
-    //Scooter gamos3(gamos2);
-    /*gamos2.getCylindree();
-    gamos2.getCouleur();
-    gamos3.getMarque();*/
+    Scooter gamos3(gamos2);
+    gamos3.setCouleur("jaune");
+    //gamos2.getCylindree();
+    gamos3.getCouleur();
+    //gamos3.getMarque();
 
     gamos2.afficher();
     return 0;

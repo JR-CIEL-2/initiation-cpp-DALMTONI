@@ -19,7 +19,7 @@ Scooter::Scooter(const Scooter &autre) : Vehicule(autre)
 
 Scooter::~Scooter()
 {
-    cout << "un objet a ete detruit" << endl;
+    //cout << "un objet a ete detruit" << endl;
 }
 
 void Scooter::setCylindree(int cyl)

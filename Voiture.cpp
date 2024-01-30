@@ -20,7 +20,7 @@ Voiture::Voiture(const Voiture &autre) : Vehicule(autre)
 
 Voiture::~Voiture() 
 {
-    cout << "un objet a ete detruit" << endl;
+    //cout << "un objet a ete detruit" << endl;
 }
 
 void Voiture::setALaClim(bool clim) 
