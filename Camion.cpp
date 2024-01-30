@@ -32,3 +32,4 @@ void Camion::getPoidsCharge() const
 {
     cout << "le poids de charge est de " << m_poidsCharge<< endl;
 }
+//vehicule
