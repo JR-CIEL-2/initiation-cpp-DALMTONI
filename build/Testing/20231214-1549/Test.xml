@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Site BuildName="Linux-clang++"
-	BuildStamp="20231121-0734-Experimental"
+<Site BuildName="Linux-g++"
+	BuildStamp="20231214-1549-Experimental"
 	Name="codespaces-e8804e"
 	Generator="ctest-3.18.4"
-	CompilerName="/usr/bin/clang++"
-	CompilerVersion="11.0.1"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="10.2.1"
 	OSName="Linux"
 	Hostname="codespaces-e8804e"
-	OSRelease="6.2.0-1016-azure"
-	OSVersion="#16~22.04.1-Ubuntu SMP Tue Oct 10 17:11:51 UTC 2023"
+	OSRelease="6.2.0-1018-azure"
+	OSVersion="#18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023"
 	OSPlatform="x86_64"
 	Is64Bits="1"
 	VendorString="AuthenticAMD"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="0"
 	TotalPhysicalMemory="7929"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="3243.94"
+	ProcessorClockFrequency="3243.77"
 	>
 	<Testing>
-		<StartDateTime>Nov 21 09:52 UTC</StartDateTime>
-		<StartTestTime>1700560339</StartTestTime>
+		<StartDateTime>Dec 14 15:49 UTC</StartDateTime>
+		<StartTestTime>1702568947</StartTestTime>
 		<TestList/>
-		<EndDateTime>Nov 21 09:52 UTC</EndDateTime>
-		<EndTestTime>1700560339</EndTestTime>
+		<EndDateTime>Dec 14 15:49 UTC</EndDateTime>
+		<EndTestTime>1702568947</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
