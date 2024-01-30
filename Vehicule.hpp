@@ -1,6 +1,7 @@
 #ifndef DEF_VEHICULE
 #define DEF_VEHICULE
 
+#include <iostream>
 #include <string>
 
 class Vehicule {
@@ -24,7 +25,12 @@ class Vehicule {
     void getMarque();
     void seDeplacer(int pos);
 
-    virtual void afficher() const = 0 ;
+    virtual void afficher_pure() const = 0 ;
+
+    virtual void afficher_imp() const {
+        std::cout << "Je suis un véhicule ." << std::endl;
+    };
+
 
 };
 

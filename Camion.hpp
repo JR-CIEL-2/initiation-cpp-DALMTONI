@@ -17,6 +17,10 @@ public:
     Camion(const Camion& autre);
     void setPoidsCharge(int poids);
     void getPoidsCharge()const;
+
+    void afficher_pure() const override{
+         std::cout << "Ceci est un Camion." << std::endl;
+    };
 };
 
 #endif

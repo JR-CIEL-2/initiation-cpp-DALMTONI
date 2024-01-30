@@ -20,9 +20,16 @@ public:
     void setCylindree(int cyl);
     void getCylindree() const;
 
-    void afficher() const override{
+    //virtuelle pure
+    void afficher_pure() const override{
          std::cout << "Ceci est un Scooter." << std::endl;
     };
+
+    // virtuelle implémenté
+    void afficher_imp() const override {
+        std::cout << "Je suis un Scooter." << std::endl;
+    }
+
 };
 
 #endif

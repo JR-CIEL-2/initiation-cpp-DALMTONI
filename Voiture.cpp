@@ -30,6 +30,10 @@ void Voiture::setALaClim(bool clim)
 
 void Voiture::getALaClim() const
 {
-    cout << "la clim est de " << m_aLaClim << endl;
-}
+    if(m_aLaClim == true){
+        cout << "la clim est allumer" << endl;
+    }else{
+        cout << "la clim n'est pas allumer" << endl;
+    }
+}    
 //vehicule

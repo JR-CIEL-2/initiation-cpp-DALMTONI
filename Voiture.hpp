@@ -18,6 +18,10 @@ public:
     ~Voiture();
     void setALaClim(bool clim);
     void getALaClim() const;
+
+    void afficher_pure() const override{
+         std::cout << "Ceci est une Voiture." << std::endl;
+    };
 };
 
 #endif
