@@ -36,4 +36,9 @@ void Voiture::getALaClim() const
         cout << "la clim n'est pas allumer" << endl;
     }
 }    
+
+void Voiture::demarrerVoiture() const {
+ moteur_.demarrer();
+}
+
 //vehicule

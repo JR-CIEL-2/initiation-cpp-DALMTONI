@@ -4,12 +4,14 @@
 #include <iostream>
 #include <string>
 #include "Vehicule.hpp"
+#include "moteur.hpp"
 
 
 class Voiture : public Vehicule
 {
 private:
     bool m_aLaClim;
+    Moteur moteur_;
 
 public:
     Voiture();
@@ -22,6 +24,8 @@ public:
     void afficher_pure() const override{
          std::cout << "Ceci est une Voiture." << std::endl;
     };
+
+    void demarrerVoiture() const;
 };
 
 #endif

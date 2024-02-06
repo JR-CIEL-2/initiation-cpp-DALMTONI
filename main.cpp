@@ -3,6 +3,9 @@
 #include "Scooter.hpp"
 #include "Voiture.hpp"
 #include "Camion.hpp"
+#include "moteur.hpp"
+#include "autoradio.hpp"
+#include "garage.hpp"
 
 using namespace std ;
 
@@ -24,6 +27,7 @@ int main()
     voit1.getCouleur();
     voit1.getMarque();
     voit1.afficher_pure();
+    voit1.demarrerVoiture();
 
     cout<<" "<<endl;
 
