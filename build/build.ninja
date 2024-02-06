@@ -210,6 +210,24 @@ build CMakeFiles/poo.dir/Camion.cpp.o: CXX_COMPILER__poo_Debug ../Camion.cpp || 
   OBJECT_DIR = CMakeFiles/poo.dir
   OBJECT_FILE_DIR = CMakeFiles/poo.dir
 
+build CMakeFiles/poo.dir/garage.cpp.o: CXX_COMPILER__poo_Debug ../garage.cpp || cmake_object_order_depends_target_poo
+  DEP_FILE = CMakeFiles/poo.dir/garage.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/poo.dir
+  OBJECT_FILE_DIR = CMakeFiles/poo.dir
+
+build CMakeFiles/poo.dir/moteur.cpp.o: CXX_COMPILER__poo_Debug ../moteur.cpp || cmake_object_order_depends_target_poo
+  DEP_FILE = CMakeFiles/poo.dir/moteur.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/poo.dir
+  OBJECT_FILE_DIR = CMakeFiles/poo.dir
+
+build CMakeFiles/poo.dir/autoradio.cpp.o: CXX_COMPILER__poo_Debug ../autoradio.cpp || cmake_object_order_depends_target_poo
+  DEP_FILE = CMakeFiles/poo.dir/autoradio.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/poo.dir
+  OBJECT_FILE_DIR = CMakeFiles/poo.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target poo
@@ -218,7 +236,7 @@ build CMakeFiles/poo.dir/Camion.cpp.o: CXX_COMPILER__poo_Debug ../Camion.cpp || 
 #############################################
 # Link the executable poo
 
-build poo: CXX_EXECUTABLE_LINKER__poo_Debug CMakeFiles/poo.dir/main.cpp.o CMakeFiles/poo.dir/Vehicule.cpp.o CMakeFiles/poo.dir/Scooter.cpp.o CMakeFiles/poo.dir/Voiture.cpp.o CMakeFiles/poo.dir/Camion.cpp.o
+build poo: CXX_EXECUTABLE_LINKER__poo_Debug CMakeFiles/poo.dir/main.cpp.o CMakeFiles/poo.dir/Vehicule.cpp.o CMakeFiles/poo.dir/Scooter.cpp.o CMakeFiles/poo.dir/Voiture.cpp.o CMakeFiles/poo.dir/Camion.cpp.o CMakeFiles/poo.dir/garage.cpp.o CMakeFiles/poo.dir/moteur.cpp.o CMakeFiles/poo.dir/autoradio.cpp.o
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   OBJECT_DIR = CMakeFiles/poo.dir

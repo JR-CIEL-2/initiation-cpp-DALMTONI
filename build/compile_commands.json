@@ -23,5 +23,20 @@
   "directory": "/workspaces/initiation-cpp-DALMTONI/build",
   "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Camion.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Camion.cpp",
   "file": "/workspaces/initiation-cpp-DALMTONI/Camion.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/garage.cpp.o -c /workspaces/initiation-cpp-DALMTONI/garage.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/garage.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/moteur.cpp.o -c /workspaces/initiation-cpp-DALMTONI/moteur.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/moteur.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/autoradio.cpp.o -c /workspaces/initiation-cpp-DALMTONI/autoradio.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/autoradio.cpp"
 }
 ]
