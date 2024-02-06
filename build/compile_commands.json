@@ -6,12 +6,37 @@
 },
 {
   "directory": "/workspaces/initiation-cpp-DALMTONI/build",
-  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Arme.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Arme.cpp",
-  "file": "/workspaces/initiation-cpp-DALMTONI/Arme.cpp"
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Vehicule.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Vehicule.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Vehicule.cpp"
 },
 {
   "directory": "/workspaces/initiation-cpp-DALMTONI/build",
-  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Personnage.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Personnage.cpp",
-  "file": "/workspaces/initiation-cpp-DALMTONI/Personnage.cpp"
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Scooter.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Scooter.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Scooter.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Voiture.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Voiture.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Voiture.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/Camion.cpp.o -c /workspaces/initiation-cpp-DALMTONI/Camion.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/Camion.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/garage.cpp.o -c /workspaces/initiation-cpp-DALMTONI/garage.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/garage.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/moteur.cpp.o -c /workspaces/initiation-cpp-DALMTONI/moteur.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/moteur.cpp"
+},
+{
+  "directory": "/workspaces/initiation-cpp-DALMTONI/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/poo.dir/autoradio.cpp.o -c /workspaces/initiation-cpp-DALMTONI/autoradio.cpp",
+  "file": "/workspaces/initiation-cpp-DALMTONI/autoradio.cpp"
 }
 ]

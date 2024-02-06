@@ -1,46 +1,55 @@
 #include <iostream>
-#include <string>
-#include "Personnage.hpp"
+#include "Vehicule.hpp"
+#include "Scooter.hpp"
+#include "Voiture.hpp"
+#include "Camion.hpp"
+#include "moteur.hpp"
+#include "autoradio.hpp"
+#include "garage.hpp"
 
-using namespace std;
+using namespace std ;
 
 int main()
 {
-    // Création des personnages
-    Personnage david, goliath("Epée aiguisée", 20), superman("Sabre Laser", 30);
+   
+    Scooter gamos2("vespa",120, "noir",  20, 250);
+    Scooter gamos3(gamos2);
+    gamos2.getCylindree();
+    gamos2.getCouleur();
+    gamos3.getMarque();
+    gamos2.afficher_pure();
+    gamos2.afficher_imp();
 
-    // Au combat !
-    /*
-    goliath.attaquer(david);
-    david.boirePotionDeVie(20);
-    goliath.attaquer(david);
-    david.attaquer(goliath);
-    goliath.changerArme("Double hache tranchante vénéneuse de la mort", 40);
-    goliath.attaquer(david);
-    */
+    cout<<" "<<endl;
 
-    superman.attaquer(goliath);
-    superman.attaquer(david);
+    Voiture voit1("renault",100,"gris", 10, true);
+    voit1.getALaClim();
+    voit1.getCouleur();
+    voit1.getMarque();
+    voit1.afficher_pure();
+    voit1.demarrerVoiture();
 
-    david.attaquer(superman);
-    david.changerArme("Sabre Laser", 30);
-    david.attaquer(goliath);
+    cout<<" "<<endl;
 
-    goliath.attaquer(superman);
-    goliath.boirePotionDeVie(20);
+    Camion camtar1("skoda",180,"bleu", 50, 800);
+    camtar1.getPoidsCharge();
+    camtar1.getCouleur();
+    camtar1.getMarque();
+    camtar1.afficher_pure();
 
-    superman.boirePotionDeVie(10);
-    superman.changerArme("Epée aiguisée", 20);
-    superman.attaquer(david);
+    cout<<" "<<endl;
+    cout<<"Pointeurs :"<<endl;
+    cout<<" "<<endl;
 
+    Scooter* ptr_gamos = new Scooter("tesla",190, "rouge", 20, 125);
+    ptr_gamos -> getCylindree();
+    ptr_gamos -> getCouleur();
+    ptr_gamos -> getMarque();
+    ptr_gamos -> afficher_pure();
+    delete ptr_gamos;
 
-    // Temps mort ! Voyons voir la vie de chacun...
-    cout << "David" << endl;
-    david.afficherEtat();
-    cout << endl << "Goliath" << endl;
-    goliath.afficherEtat();
-    cout << endl << "superman" << endl;
-    superman.afficherEtat();
+    cout<<" "<<endl;
 
     return 0;
 }
+
